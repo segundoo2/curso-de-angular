@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Aula-22": {
+    "Projeto-components": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -24,7 +24,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/aula-22",
+            "outputPath": "dist/projeto-components",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -71,10 +71,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "Aula-22:build:production"
+              "buildTarget": "Projeto-components:build:production"
             },
             "development": {
-              "buildTarget": "Aula-22:build:development"
+              "buildTarget": "Projeto-components:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -105,8 +105,5 @@
         }
       }
     }
-  },
-  "cli": {
-    "analytics": "071a0aab-aa8e-4e0a-9dfc-da8a8e106815"
   }
 }
