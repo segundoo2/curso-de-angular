@@ -21,4 +21,8 @@
         font-size: 40px;
         padding: 10px;
     }
+
+    &::ng-deep .card-button {
+        background-color: #a056d9;
+    }
 }
