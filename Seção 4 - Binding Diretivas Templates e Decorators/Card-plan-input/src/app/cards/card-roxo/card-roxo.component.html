@@ -1,10 +1,6 @@
 <div class="card-roxo">
-    <div class="card-roxo__plan card__item">Plano <strong>Completo</strong></div>
-    <div class="card-roxo__price card__item">R$250,00/Mês</div>
+    <div class="card-roxo__plan card__item">Plano <strong>{{ planTypePurple }}</strong></div>
+    <div class="card-roxo__price card__item">R${{ planPricePurple }},00/Mês</div>
     <app-card-button></app-card-button>
     <app-card-cancel-buttom></app-card-cancel-buttom>
-    
-    <mat-slider min="1" max="5" step="0.5">
-        <input matSliderThumb value="1.5">
-    </mat-slider>
 </div>

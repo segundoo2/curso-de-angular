@@ -7,6 +7,9 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  planTypeYellow: string = 'Simples';
+  planTypeYellow: string = 'SIMPLES';
   planPriceYellow: number = 100;
+
+  planTypePurple: string = 'COMPLETO';
+  planPricePurple: number = 250;
 }
