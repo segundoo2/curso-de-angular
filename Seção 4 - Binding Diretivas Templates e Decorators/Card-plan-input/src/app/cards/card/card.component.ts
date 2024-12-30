@@ -10,4 +10,8 @@ import { Component, Input } from '@angular/core';
 export class CardComponent {
   @Input({ required: true, alias: 'planTypeYellow' }) planTypeYellow: string = '';
   @Input({ required: true, alias: 'planPriceYellow' }) planPriceYellow: number = 0;
+
+  buttonCliked(valueEmitted: boolean) {
+    console.log('Button clicked', valueEmitted);
+  }
 }
