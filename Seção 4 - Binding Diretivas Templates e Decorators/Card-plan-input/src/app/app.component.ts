@@ -12,4 +12,8 @@ export class AppComponent {
 
   planTypePurple: string = 'Completo';
   planPricePurple: number = 250;
+
+  handlePlanType(meuInput: string) {
+    this.planTypeYellow = meuInput
+  }
 }

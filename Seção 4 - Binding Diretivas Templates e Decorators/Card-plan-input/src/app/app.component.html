@@ -3,3 +3,5 @@
     
     <app-card-roxo [planTypePurple]="planTypePurple" [planPricePurple]="planPricePurple"></app-card-roxo>
 </div>
+
+<input #meuInput type="text" (keyup)="handlePlanType(meuInput.value)">

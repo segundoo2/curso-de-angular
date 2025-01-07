@@ -1,5 +1,10 @@
 import { Component, Input } from '@angular/core';
 
+function handlePlanType(value: string) {
+  console.log(`Text original ${value}`);
+  return value.toUpperCase();
+}
+
 @Component({
   selector: 'app-card',
   standalone: false,
@@ -8,15 +13,9 @@ import { Component, Input } from '@angular/core';
   styleUrl: './card.component.scss'
 })
 export class CardComponent {
-  private _planTypeYellow: string = '';
-  @Input({ required: true, alias: 'planTypeYellow' }) 
-  set planTypeYellow(value: string) {
-    this._planTypeYellow = value.toUpperCase();
-  }
-
-  get planTypeYellow(): string {
-    return this._planTypeYellow;
-  }
+  @Input({ 
+    alias: 'planTypeYellow', 
+    transform: (value: string) => handlePlanType(value)}) planTypeYellow: string = '';
 
   @Input({ required: true, alias: 'planPriceYellow' }) planPriceYellow: number = 0;
 
