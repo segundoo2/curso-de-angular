@@ -1,1 +1,15 @@
-<app-button></app-button>
+<section>
+  <app-card
+    [planType]="plans.simple.type"
+    [planPrice]="plans.simple.price"
+    [cardStyle]="'orange'"
+    (buttonCliked)="onCardButtonCliked()"
+  ></app-card>
+  
+  <app-card
+  [planType]="plans.complete.type"
+  [planPrice]="plans.complete.price"
+  [cardStyle]="'purple'"
+  (buttonCliked)="onCardButtonCliked()"
+  ></app-card>
+</section>
